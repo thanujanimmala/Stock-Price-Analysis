@@ -40,7 +40,7 @@ Try it here:
 
 stock-price-analysis/
 ├── app.py # Main Streamlit web app
-├── main.py # CLI pipeline runner (optional)
+├── main.py # CLI pipeline runner 
 ├── README.md # Project overview
 ├── requirements.txt # Project dependencies
 ├── report.pdf # Sample generated report
@@ -59,7 +59,7 @@ stock-price-analysis/
 │ ├── generate_pdf.py
 │ └── utils.py
 
-├── notebooks/ # (Optional) Jupyter notebooks
+├── notebooks/ 
 └── reports/
 └── figures/ # Output figures for reporting
 
