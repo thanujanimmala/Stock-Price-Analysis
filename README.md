@@ -23,6 +23,23 @@ Try it here:
 
 ---
 
+## 🚀 Installation
+
+To run the project locally, follow these steps:
+bash 
+# Clone the repository
+git clone https://github.com/thanujanimmala/Stock-Price-Analysis.git
+
+# Navigate into the project folder
+cd Stock-Price-Analysis
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Launch the Streamlit app
+streamlit run app.py
+
+
 ## 🧪 Technologies Used
 
 - **Python 3.10+**
