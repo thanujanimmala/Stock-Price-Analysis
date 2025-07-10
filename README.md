@@ -1,82 +1,119 @@
-# 📈 Stock Price Analysis Web App
+# 📊 Stock Price Analysis (2000–2025 + Forecast)
+---
 
-A web application to analyze historical stock data, visualize trends, forecast future prices, and generate PDF reports — built using **Streamlit**, **Pandas**, and **Plotly**.
+A full-featured web app built with **Streamlit**, **Prophet**, and **yfinance** to analyze stock price trends, forecast future prices, and export results to a clean **PDF report**.
+
+🌐 **Live App:** [Click to Open](https://stock-price-analysis-7x6q.onrender.com/)
 
 ---
 
-## 🚀 Features
+## 📌 Features
+---
 
--  Fetch stock data (TCS, Reliance, Infosys) from 2000–2025 using **Yahoo Finance**
--  Interactive line and bar charts
--  252-day Moving Average calculation
--  Forecast future stock prices using Prophet
--  Upload custom CSV files
--  Download cleaned data in Excel format
--  Generate PDF analysis report with graphs
+- ✅ **Preloaded Stocks**: Analyze TCS, RELIANCE, INFY directly.
+- 🔍 **Enter Custom Ticker**: Fetch any stock using Yahoo Finance.
+- 📂 **Upload Your Own CSV**: Bring your own historical stock data.
+- 📈 **Visual Charts**:
+  - Closing Price with 1-Year Moving Average
+  - Annual Returns (%)
+  - Forecasting with Facebook Prophet (Next 2 Years)
+- 📅 **Flexible Date Range Filtering**
+- 🧾 **Download PDF Report** with all visualizations
+- 🧼 Optionally display raw cleaned or forecast data
 
 ---
 
-## 🌐 Live Demo
-
-Try it here:  
-🔗 [https://stock-price-analysis-7x6q.onrender.com](https://stock-price-analysis-7x6q.onrender.com)
-
+## 🗂️ Project Structure
 ---
+```bash
+Stock-Price-Analysis/
+├── app.py                  # Streamlit App
+├── requirements.txt        # Dependencies
+├── README.md               # Documentation
+│
+├── data/
+│   ├── raw/                # Raw downloaded CSVs
+│   └── processed/          # Cleaned stock data
+│
+├── reports/
+│   └── figures/            # Saved graphs for PDF
+│
+├── scripts/
+│   ├── fetch_data.py       # Fetch from Yahoo Finance
+│   ├── clean_data.py       # Data cleaning
+│   ├── analyze_trends.py   # MA & annual return logic
+│   ├── generate_pdf.py     # Generate report using FPDF
+│   └── visualize.py        # Save and show graphs
+```
+## 📦 Installation & Setup Guide
 
-## 🚀 Installation
+Follow these steps to run the project locally on your system:
 
-To run the project locally, follow these steps:
-bash 
-# Clone the repository
+###  1. Clone the Repository
+
+First, clone this GitHub repository to your local machine.
+
+```bash
 git clone https://github.com/thanujanimmala/Stock-Price-Analysis.git
-
-# Navigate into the project folder
 cd Stock-Price-Analysis
+```
 
-# Install dependencies
+### 2. Install All Dependencies
+Install the required Python libraries using the requirements.txt file:
+
+```bash
+
 pip install -r requirements.txt
+```
 
-# Launch the Streamlit app
+### ▶️ 4. Run the Streamlit App
+Once everything is installed, launch the Streamlit app:
+
+```bash
+
 streamlit run app.py
+```
+This will open the web application in your default browser at:
+
+```arduino
+
+http://localhost:8501
+```
+### 📄 Example CSV Format
+```csv
+
+Date,Close
+2020-01-01,400.5
+2020-01-02,405.2
+...
+```
 
 
-## 🧪 Technologies Used
-
-- **Python 3.10+**
-- **Streamlit**
-- **Pandas**
-- **Plotly**
-- **Prophet**
-- **yfinance**
-- **fpdf**
-- **Kaleido** (for image export)
-
+## 📦 Built With
 ---
 
-## 📁 Project Structure
+Streamlit – UI framework
 
-stock-price-analysis/
-├── app.py # Main Streamlit web app
-├── main.py # CLI pipeline runner 
-├── README.md # Project overview
-├── requirements.txt # Project dependencies
-├── report.pdf # Sample generated report
-├── annual_return.png # Saved chart image
-├── closing_price.png # Saved chart image
-├── forecast.png # Saved chart image
+yfinance – Stock data source
 
-├── data/ # Folder for raw and cleaned data
-│ ├── raw/
-│ └── processed/
+Prophet – Time-series forecasting
 
-├── scripts/ # Python scripts used in pipeline
-│ ├── fetch_data.py
-│ ├── clean_data.py
-│ ├── analyze_trends.py
-│ ├── generate_pdf.py
-│ └── utils.py
+[Pandas, Matplotlib, Seaborn] – Data processing & visualization
 
-├── notebooks/ 
-└── reports/
-└── figures/ # Output figures for reporting
+FPDF – PDF generation
 
+
+## 🧠 Future Ideas
+---
+
+Compare multiple tickers side-by-side
+
+Add technical indicators (RSI, MACD)
+
+Add volume-based analysis
+
+Add historical performance summary panel
+
+## 📜 License
+---
+This project is licensed under the MIT License.
