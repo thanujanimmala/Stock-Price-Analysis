@@ -43,26 +43,24 @@ A full-featured web application built with **Streamlit**, **Prophet**, and **yfi
 
 ```
 Stock-Price-Analysis/
-│
-├── app.py                  # Main Streamlit application
-├── requirements.txt        # All required Python libraries
-├── README.md               # You're reading it!
-├──main.py                  #
-│
+├── app.py                   # Main Streamlit application
+├── main.py                  # Main helper functions (outside scripts)
+├── requirements.txt         # Python dependencies
+├── README.md                # Project documentation
 ├── data/
-│   ├── raw/                # (Optional) Raw stock data files
-│   └── processed/          # Preprocessed stock CSVs
-│
+│   ├── raw/                 # Raw downloaded stock CSV files
+│   └── processed/           # Cleaned/processed stock CSV files
 ├── reports/
-│   └── figures/            # Saved plots used in PDF
-│
+│   └── figures/             # Generated plots/images for PDF reports
 ├── scripts/
-│   ├── fetch_data.py       # Fetch stock data (optional utility)
-│   ├── clean_data.py       # Data cleaning logic
-│   ├── analyze_trends.py   # MA, annual return calculations
-│   ├── visualize.py        # Reusable plot functions
-    ├──utils.py             #
-│   └── generate_pdf.py     # Create PDF report using FPDF
+│   ├── fetch_data.py        # Functions to fetch stock data from Yahoo Finance
+│   ├── clean_data.py        # Data cleaning functions
+│   ├── analyze_trends.py    # Functions to calculate moving averages, returns
+│   ├── generate_pdf.py      # PDF report generation functions
+│   ├── visualize.py         # Plotting and visualization functions
+│   └── utils.py             # Utility/helper functions
+└── .gitignore               # Files/folders to ignore in Git
+
 ```
 
 ---
