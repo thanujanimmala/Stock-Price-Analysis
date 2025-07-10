@@ -7,6 +7,16 @@ A full-featured web application built with **Streamlit**, **Prophet**, and **yfi
 - Analyze historical stock price trends  
 - Forecast future prices using time series models  
 - Export charts and insights into a neat **PDF report**
+---
+
+## 🚀 Project Overview
+
+• This web app is designed to help users analyze stock price data comprehensively and intuitively.
+
+• This app is designed for investors, traders, financial analysts, students, or anyone curious about stock market behavior and predictions. With **preloaded popular Indian stocks** (TCS, Reliance, Infosys), the ability to **fetch any stock data live from Yahoo Finance**, or **upload your own stock price history CSV**, this tool covers diverse use cases. 
+
+• The app provides interactive charts such as moving averages and annual returns alongside Facebook Prophet’s forecasting model to offer both historical visual insights and future price predictions, helping users make smarter decisions.
+---
 
 🌐 **Live Demo** → [Click Here to Open](https://stock-price-analysis-7x6q.onrender.com/)
 
