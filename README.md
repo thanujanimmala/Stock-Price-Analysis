@@ -66,7 +66,7 @@ Install the required Python libraries using the requirements.txt file:
 pip install -r requirements.txt
 ```
 
-### ▶️ 4. Run the Streamlit App
+### 3. Run the Streamlit App
 Once everything is installed, launch the Streamlit app:
 
 ```bash
@@ -92,27 +92,27 @@ Date,Close
 ## 📦 Built With
 ---
 
-Streamlit – UI framework
+• Streamlit – UI framework
 
-yfinance – Stock data source
+• yfinance – Stock data source
 
-Prophet – Time-series forecasting
+• Prophet – Time-series forecasting
 
-[Pandas, Matplotlib, Seaborn] – Data processing & visualization
+• [Pandas, Matplotlib, Seaborn] – Data processing & visualization
 
-FPDF – PDF generation
+• FPDF – PDF generation
 
 
 ## 🧠 Future Ideas
 ---
 
-Compare multiple tickers side-by-side
+• Compare multiple tickers side-by-side
 
-Add technical indicators (RSI, MACD)
+• Add technical indicators (RSI, MACD)
 
-Add volume-based analysis
+• Add volume-based analysis
 
-Add historical performance summary panel
+• Add historical performance summary panel
 
 ## 📜 License
 ---
