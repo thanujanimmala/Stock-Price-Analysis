@@ -47,6 +47,7 @@ Stock-Price-Analysis/
 ├── app.py                  # Main Streamlit application
 ├── requirements.txt        # All required Python libraries
 ├── README.md               # You're reading it!
+├──main.py                  #
 │
 ├── data/
 │   ├── raw/                # (Optional) Raw stock data files
@@ -60,6 +61,7 @@ Stock-Price-Analysis/
 │   ├── clean_data.py       # Data cleaning logic
 │   ├── analyze_trends.py   # MA, annual return calculations
 │   ├── visualize.py        # Reusable plot functions
+    ├──utils.py             #
 │   └── generate_pdf.py     # Create PDF report using FPDF
 ```
 
